@@ -23,8 +23,8 @@
 		<form>
 		<fieldset>
 			<legend>Your unit</legend>
-			<label for="name">Name:</label><input type="text" name="name" id="name"/><br/>
-			<label for="email">Email:</label><input type="email" name="email" id="email"/><br/>
+			<label for="name">Name:</label><input type="text" name="name" id="name" required="required"/>*<br/>
+			<label for="email">Email:</label><input type="email" name="email" id="email" required="required"/>*<br/>
 			<label for="dob">Date od birth:</label><input type="date" name="dob" id="dob"/><br/>
 		</fieldset>
 		<fieldset>
@@ -36,6 +36,17 @@
 			<select name="tutor" id="tutor">
 				<option value='1' selected="selected">Tutor 1</option>
 			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Issue</legend>
+			<input type="checkbox" name="issue[]" id="HTML" value="HTML"/>HTML
+			<input type="checkbox" name="issue[]" id="CSS" value="CSS"/>CSS
+			<input type="checkbox" name="issue[]" id="Javascript" value="Javascript"/>Javascript
+			<input type="checkbox" name="issue[]" id="PHP" value="PHP"/>PHP
+			<input type="checkbox" name="issue[]" id="MySQL" value="MySQL"/>MySQL
+			<label for="tutor">Description of Issue</label>
+			<textarea placaholder="Enter comments here">
+			</textarea>
 		</fieldset>
 		<input type="submit" value="Register"/>
 		<input type="reset" value="Reset"/>
